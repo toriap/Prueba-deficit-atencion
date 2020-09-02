@@ -1,0 +1,329 @@
+body
+{
+  background-image: url("../images/background.jpg");
+  overflow-x: hidden;
+}
+header
+{
+  width: 100%;
+  height: 100%;
+  height: calc(100% - 1px);
+  background-size: cover;
+}
+.tit
+{
+  background: black;
+  background-image: url("../images/black_lozenge_@2X.png");
+  color:white;
+  font-family: tahoma;
+  width: 100%;
+  display: block;
+  height: 40px;
+  padding: 10px 30px;
+}
+
+.titulo
+{
+  background: black;
+  background-image: url("../images/black_lozenge_@2X.png");
+  color:gray;
+  font-family: tahoma;
+  width: 100%;
+  display: block;
+  height: 40px;
+  padding: 10px 30px;
+}
+
+span.titu:hover
+{
+  color: white;
+  cursor: pointer;
+}
+
+div.centrop
+{
+	border-radius: 5px;
+  background-color: white;
+  padding: 2px 2px 2px 2px;
+}
+
+div.centro
+{
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px 5px 5px 5px;
+}
+
+.logo
+{
+  /*width:450px;
+  height:150px;*/
+}
+.logo2
+{
+  /*width:300px;
+  height:150px;*/
+}
+h3
+{
+  text-align: center;
+  font-family:Verdana;
+  font-weight: bold;
+}
+
+input[type=submit]
+{
+  cursor: pointer;
+  border-radius: 5px;
+  width: 90px;
+  padding: 5px 5px 5px 5px;
+  background-color: rgba(153,0,0,0.8);
+  font-weight: bold;
+  color: white;
+}
+
+.volver
+{
+  cursor: pointer;
+  border-radius: 5px;
+  width: 90px;
+  padding: 5px 5px 5px 5px;
+  background-color: rgba(160,160,160,0.8);
+  font-weight: bold;  
+  color:black;
+}
+
+.boton
+{
+  cursor: pointer;
+  border-radius: 5px;
+  width: 90px;
+  padding: 5px 5px 5px 5px;
+  background-color: rgba(153,0,0,0.8);
+  font-weight: bold;
+  color: white;
+}
+
+.botonmod
+{
+  cursor: pointer;
+  border-radius: 5px;
+  width: 90px;
+  padding: 5px 5px 5px 5px;
+  background-color: rgba(0,153,0,0.8);
+  font-weight: bold;
+  color: white;
+}
+
+.botonclear
+{
+  cursor: pointer;
+  border-radius: 5px;
+  width: 90px;
+  padding: 5px 5px 5px 5px;
+  background-color: rgba(255,153,51,0.8);
+  font-weight: bold;
+  color: black;
+}
+
+.x
+{
+  cursor: pointer;
+  border-radius: 5px;
+  width: 35px;
+  padding: 5px 5px 5px 5px;
+  background-color: rgba(153,0,0,0.8);
+  font-weight: bold;
+  color: white;
+}
+
+input[type=button].volver
+{
+  cursor: pointer;
+  border-radius: 5px;
+  width: 90px;
+  padding: 5px 5px 5px 5px;
+  background-color: rgba(160,160,160,0.8);
+  font-weight: bold;  
+  color:black;
+}
+
+input[type=button]:disabled
+{
+  cursor: not-allowed;
+  background-color: rgba(153,0,0,0.4);
+}
+
+.cedula
+{
+	width: 25%;
+}
+
+input[type=text]:read-only
+{
+  cursor: not-allowed;
+}
+
+#nav
+{
+  border-radius: 5px;
+  background-color: white;
+  margin: 4px 7px;
+  /*width: 155px;*/
+}
+
+.titulonav
+{
+  border-radius: 5px;
+  border: 1px solid #d7d7d7;   
+  font-size: 10pt;
+  font-weight: bold;
+  background-color: rgba(140,25,25,0.9);
+  color: #fff;
+  padding: 4px;
+  font-family: Tahoma;
+}
+
+.menu
+{
+  border-radius: 5px;
+  background-color: white;
+  margin: 4px 7px;
+  margin-top: 0px;
+  margin-right: 0pt;
+  margin-bottom: 10px;
+  margin-left: 0pt;
+}
+
+.menu ul
+{
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0pt;
+  padding-right: 0pt;
+  padding-bottom: 0pt;
+  padding-left: 0px;
+  list-style-type: none;
+  list-style-image: none;
+  list-style-position: outside;
+}
+
+.menu li
+{
+  border-bottom: 1px solid #d7d7d7;   
+  border-left: 1px solid #d7d7d7;   
+  border-right: 1px solid #d7d7d7;   
+  padding: 1px 0 2px 4px;
+  font-size: 10pt;
+  margin-top: 0px;
+  margin-right: 0pt;
+  margin-bottom: 0px;
+  margin-left: 0pt;
+  background-color: #e6f2ff;
+  font-family: Tahoma;
+}
+
+.menu a
+{
+  text-decoration: none;
+  color: rgba(153,0,0,0.8);
+}
+
+.pass
+{
+  width: 25%;
+  background-image: url('passicon.png');
+}
+
+
+
+@media print
+{
+   .boton, .volver, .logo, .tit
+   {
+     display: none;
+   }
+}
+
+/* The Modal (background) */
+.modala {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modala-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+th
+{
+  text-align: center;
+}
+
+div.inline
+{
+  display: inline-block;
+}
+
+.inputfile
+{
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label
+{
+  width: 25%;
+  padding: 12px 20px 12px 40px;
+  background-image: url('../images/uploadicon.png');
+  background-position: 10px 7px; 
+  background-repeat: no-repeat;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.2s;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.inputfile + label:hover 
+{
+  border: 3px solid #555;
+}
